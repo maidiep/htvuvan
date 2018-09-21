@@ -24,9 +24,6 @@ body {
     z-index: 0;
 }
 
-.name {
-    color: white;
-}
 
 a:link, a:hover, a:visited{
     color: white;
