@@ -5,31 +5,14 @@ body {
 
 div.section1 {
     position: relative;
-    height: 100vh;
+    height: 800px;
     background:url(./images/opbg1.jpg) center center no-repeat;
     background-size: cover;
     z-index: 1;
     overflow: hidden;
  }
 
-#overlay {
-    position: fixed;
-    background-color: rgba(0,0,0, .4);
-    height: 100%;
-    width: 100%;
-    z-index: 2;  
-}
-
-
-a:hover {
-    color: orange !important;
-}
-
-.nav-link {
-    color: white;
-}
-
-div.section1:before {
+ div.section1:before {
     content: "";
     position: absolute;
     top: 100%;
@@ -51,7 +34,64 @@ div.section1:after {
     z-index: 3;
 }
 
-div.section2 {
-    background-color: white;
+#overlay {
+    background-color: rgba(0,0,0, .5);
+    height: 800px;
+    width: 100%;
+    z-index: 2;  
+    overflow: hidden;
 }
 
+
+a:hover {
+    color: white !important;
+}
+
+.nav-link {
+    color: orange;
+    padding-top: 20px !important;
+    padding-right: 30px !important;
+}
+
+section.aboutMe {
+    /* padding: 40px; */
+    height: 500px;
+    position: relative;   
+}
+
+.aboutMe h1 {
+    text-align: center;
+    padding: 20px
+}
+
+div.bio {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    padding: 200px;
+}
+
+div.portfolio {
+    position: relative;
+    height: 500px;
+    background-color: orange;
+    z-index: -1;
+    margin-top: 100px
+ }
+
+ .portfolio:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top left;
+    transform: skewY(-4deg);
+    background: inherit;
+ }
