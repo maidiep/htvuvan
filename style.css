@@ -1,3 +1,8 @@
+/* font-family: 'Montserrat', sans-serif; 
+font-family: 'Roboto', sans-serif;
+*/
+
+
 .orange {
     color: #cc6f31;
 }
@@ -13,16 +18,18 @@
 body {
     margin: 0;
     padding: 0;
-     color: #1c2121;
+    color: #1c2121;
 }
 
 div.section1 {
     position: relative;
-    height: 800px;
+    height: 100vh;
+    width:100%;
     background:url(./images/opbg1.jpg) center center no-repeat;
     background-size: cover;
     z-index: 1;
     overflow: hidden;
+    background-attachment: fixed;
  }
 
  div.section1:before {
@@ -48,7 +55,7 @@ div.section1:after {
 }
 
 #overlay {
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0,0,0,.5);
     height: 800px;
     width: 100%;
     z-index: 2;  
@@ -64,14 +71,7 @@ a:hover {
     color:white;
     padding-top: 20px !important;
     padding-right: 30px !important;
-}
-
- .elk {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    left: 50%;
-  
+    font-family: "Roboto", sans-serif;
 }
 
 .welcome {
@@ -81,17 +81,26 @@ a:hover {
     height: 200px;
     margin: 0 auto;
     margin-top: 250px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.welcome h1 {
+    font-size: 4em;
 }
 
 section.aboutMe {
     height: 500px;
     position: relative;   
     background-color: white;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 .aboutMe h1 {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 div.bio {
@@ -101,7 +110,7 @@ div.bio {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
-    padding: 200px;
+    padding: 300px;
     line-height: 1.5em;
 }
 
@@ -110,6 +119,8 @@ section.skills {
     background-color:#cc6f31;
     margin-top: 100px;
     position: relative;
+    font-family: "Montserrat", sans-serif;
+
  }
 
  section.skills:after {
@@ -133,7 +144,7 @@ section.skills {
     left: 50%;
     /* margin-right: -50%; */
     transform: translate(-50%, -50%); 
-    padding: 200px;
+    padding: 300px;
     z-index: 3;
     line-height: 1.5em;
     color: white; 
@@ -141,6 +152,7 @@ section.skills {
 }
 
 .skillsContent h1 {
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 20px;
     color: white; 
@@ -188,6 +200,8 @@ section.contact {
     padding: 20px;
     color: white; 
     z-index: 2;
+    font-family: "Montserrat", sans-serif;
+
 
 
 }
@@ -208,5 +222,11 @@ section.contact {
     text-align: center;
     vertical-align: middle;
     z-index: 1
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
