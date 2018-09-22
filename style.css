@@ -48,7 +48,7 @@ div.section1:after {
 }
 
 #overlay {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0,0,0, .4);
     height: 800px;
     width: 100%;
     z-index: 2;  
@@ -64,6 +64,27 @@ a:hover {
     color:white;
     padding-top: 20px !important;
     padding-right: 30px !important;
+}
+
+/* profile pic */
+.profilepic {
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+
+ .elk {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    left: 50%;
+  
+}
+
+.welcome {
+
+    
 }
 
 section.aboutMe {
@@ -192,3 +213,4 @@ section.contact {
     vertical-align: middle;
     z-index: 1
 }
+
